@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Logasri P — Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code&display=swap" rel="stylesheet">
+
+  <!-- Icons (Font Awesome CDN) -->
+  <script src="https://kit.fontawesome.com/a2e0e6ad0d.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Particle Canvas -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- NAV -->
+  <header class="nav-wrap" id="top">
+    <nav class="nav container">
+      <div class="brand" tabindex="0">
+        <span class="brand-name">LOGASRI</span><span class="dot">.</span>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links" role="menubar">
+        <li role="none"><a role="menuitem" href="#home">Home</a></li>
+        <li role="none"><a role="menuitem" href="#about">About</a></li>
+        <li role="none"><a role="menuitem" href="#skills">Skills</a></li>
+        <li role="none"><a role="menuitem" href="#projects">Projects</a></li>
+        <li role="none"><a role="menuitem" href="#certs">Certs</a></li>
+        <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO / HOME -->
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-left glass">
+        <div class="intro">
+          <h1 class="title"><span class="accent">Logasri P</span></h1>
+          <h2 class="typing" aria-live="polite"></h2>
+          <p class="lead">
+            Third-year Computer Science student — building web apps, IoT prototypes, and learning ML fundamentals.
+            Strong in <strong>Python</strong>, <strong>Java</strong>, and <strong>C</strong>.
+          </p>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn-primary" href="#projects">View Projects</a>
+          <a class="btn-ghost" href="#contact">Hire / Contact</a>
+        </div>
+
+        <div class="meta-row">
+          <div class="meta">
+            <small>Location</small>
+            <span>Tiruvannamalai, Tamil Nadu</span>
+          </div>
+          <div class="meta">
+            <small>CGPA</small>
+            <span>8.7 / 10</span>
+          </div>
+          <div class="meta">
+            <small>Degree</small>
+            <span>B.E — Computer Science</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-right glass profile-card" aria-hidden="false">
+        <div class="profile-top">
+          <div class="avatar" aria-hidden="true">
+            <!-- Placeholder circle avatar -->
+            <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="96" height="96" rx="18" fill="url(#g1)"/>
+              <defs>
+                <linearGradient id="g1" x1="0" x2="1">
+                  <stop offset="0" stop-color="#6a5cff"/>
+                  <stop offset="1" stop-color="#00c6ff"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="profile-info">
+            <h3>Logasri P</h3>
+            <p class="role">Aspiring Software Engineer</p>
+            <div class="socials">
+              <a href="https://www.linkedin.com/in/logasripanneerselvam1a035631a/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="https://leetcode.com/u/logasripanneerselvam/" target="_blank" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+              <a href="mailto:loagsripanneerselvam@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <small>Internships</small>
+            <strong>1</strong>
+          </div>
+          <div class="stat">
+            <small>Projects</small>
+            <strong>2+</strong>
+          </div>
+          <div class="stat">
+            <small>Certifications</small>
+            <strong>4</strong>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <h3 class="section-title">About Me</h3>
+      <div class="glass about-grid">
+        <div>
+          <p>
+            I’m a third-year Computer Science Engineering student who enjoys problem-solving and building practical solutions.
+            I’ve worked on web-based learning tools and IoT systems, and I’m actively expanding my skills in algorithms and AI.
+            I bring strong fundamentals in <em>Python</em>, <em>Java</em>, and <em>C</em>, and practical experience with MySQL, HTML/CSS, and Arduino-based prototyping.
+          </p>
+
+          <ul class="quick-list">
+            <li><strong>Education:</strong> Panimalar Engineering College (B.E CSE)</li>
+            <li><strong>Languages:</strong> English, Tamil</li>
+            <li><strong>Availability:</strong> Internships / Entry-level roles</li>
+          </ul>
+        </div>
+
+        <div class="honors">
+          <div class="honor-card">
+            <h4>Infosys Springboard</h4>
+            <p>Python — 2025</p>
+          </div>
+          <div class="honor-card">
+            <h4>NPTEL (Elite)</h4>
+            <p>Java, Python, AIML — 2025</p>
+          </div>
+          <div class="honor-card">
+            <h4>Future Skills Prime</h4>
+            <p>Data Acquisition (Silver) — 2024</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+      <h3 class="section-title">Skills</h3>
+
+      <div class="skills-grid glass">
+        <div class="skill">
+          <div class="skill-head">
+            <span>Python</span>
+            <small>90%</small>
+          </div>
+          <div class="skill-bar"><div class="fill" data-percent="90"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <span>Java</span>
+            <small>85%</small>
+          </div>
+          <div class="skill-bar"><div class="fill" data-percent="85"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <span>C</span>
+            <small>80%</small>
+          </div>
+          <div class="skill-bar"><div class="fill" data-percent="80"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <span>Web (HTML/CSS)</span>
+            <small>78%</small>
+          </div>
+          <div class="skill-bar"><div class="fill" data-percent="78"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <span>MySQL / DBMS</span>
+            <small>75%</small>
+          </div>
+          <div class="skill-bar"><div class="fill" data-percent="75"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <span>Data Structures</span>
+            <small>80%</small>
+          </div>
+          <div class="skill-bar"><div class="fill" data-percent="80"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+      <h3 class="section-title">Selected Projects</h3>
+
+      <div class="projects-grid">
+        <article class="project-card glass tilt" data-tilt>
+          <div class="project-badge">Web</div>
+          <h4>Health Heal Tracker</h4>
+          <p>Responsive learning web app built with HTML/CSS to teach human body functions and basic health information to students.</p>
+          <div class="project-meta">
+            <span>HTML / CSS</span>
+            <a class="link" href="#" aria-label="Project link">Live</a>
+            <a class="link" href="#" aria-label="Repo link">Code</a>
+          </div>
+        </article>
+
+        <article class="project-card glass tilt" data-tilt>
+          <div class="project-badge">IoT</div>
+          <h4>Smart Plant Health Monitoring</h4>
+          <p>IoT prototype that monitors soil moisture, humidity, and temperature and visualizes real-time readings on a dashboard.</p>
+          <div class="project-meta">
+            <span>Arduino / Sensors</span>
+            <a class="link" href="#" aria-label="Project link">Demo</a>
+            <a class="link" href="#" aria-label="Repo link">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certs" class="section container">
+      <h3 class="section-title">Certifications</h3>
+      <div class="certs-grid glass">
+        <div class="cert">Infosys Springboard — Python (2025)</div>
+        <div class="cert">Cisco, AWS, Accenture — Networking (2024)</div>
+        <div class="cert">NPTEL — Java / Python / AIML (Elite 2025)</div>
+        <div class="cert">Future Skills Prime — Data Acquisition (Silver, 2024)</div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container">
+      <h3 class="section-title">Contact</h3>
+
+      <div class="contact-grid glass">
+        <form class="contact-form" method="POST" action="https://formspree.io/f/PLACE_YOUR_ID" autocomplete="on">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required placeholder="Your name" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required placeholder="you@example.com" />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" required placeholder="Hi, I'd like to talk about..."></textarea>
+          </label>
+          <div class="form-row">
+            <button class="btn-primary" type="submit">Send Message</button>
+            <button class="btn-ghost" type="reset">Reset</button>
+          </div>
+        </form>
+
+        <div class="contact-info">
+          <h4>Get in touch</h4>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:logasripanneerselvam@gmail.com">logasripanneerselvam@gmail.com</a></p>
+          <p><i class="fas fa-phone"></i> 8124128682</p>
+          <p><i class="fas fa-map-marker-alt"></i> Tiruvannamalai, Tamil Nadu, India</p>
+
+          <div class="socials large">
+            <a href="https://www.linkedin.com/in/logasripanneerselvam1a035631a/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://leetcode.com/u/logasripanneerselvam/" target="_blank" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <small>© 2026 Logasri P — Built with passion & code</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
